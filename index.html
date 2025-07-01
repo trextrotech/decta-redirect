@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>DECTA支付中转页面</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        line-height: 1.6;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      h1 {
+        color: #333;
+      }
+      .note {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-left: 4px solid #007bff;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DECTA支付中转页面</h1>
+
+      <p>
+        这是一个用于解决DECTA支付重定向问题的中转页面站点。当DECTA支付完成后，会重定向到此站点，然后再重定向到实际的支付结果页面。
+      </p>
+
+      <div class="note">
+        <p>
+          <strong>注意：</strong>
+          此站点仅用于临时解决HTTPS到HTTP的重定向问题。长期解决方案应该是为主站点配置HTTPS。
+        </p>
+      </div>
+
+      <h2>重定向页面</h2>
+      <ul>
+        <li><a href="success.html">支付成功</a> - 重定向到支付成功页面</li>
+        <li><a href="failure.html">支付失败</a> - 重定向到支付失败页面</li>
+        <li><a href="cancel.html">支付取消</a> - 重定向到支付取消页面</li>
+      </ul>
+    </div>
+  </body>
+</html>
